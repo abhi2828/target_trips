@@ -8,27 +8,41 @@
 }
 
 h2 {
-    margin: 30px 15px;
+    margin: 0px 15px;
+}
+
+section {
+    margin-top: 1cm;
 }
 
 .tele_icon {
-    background: black;
+    background: red;
     height: 33px;
-    width: 36px;
+    width: 33px;
     border-radius: 30px;
     text-align: center;
     padding-top: 6px;
     margin-left: 11px;
 }
 
+.tele_icon a i {
+    color: white;
+}
+
 .shopping_icon {
-    background: black;
+    background: red;
     height: 36px;
     width: 36px;
     border-radius: 30px;
     text-align: center;
     padding-top: 6px;
     margin-left: 11px;
+}
+
+.shopping_icon a i {
+    color: white;
+    font-size: 20px;
+    margin-right: 3px;
 }
 
 input.header_search {
@@ -100,6 +114,14 @@ input.header_search {
     height: 380px;
 }
 
+.carousel-indicators .active {
+    background: red;
+}
+
+.carousel-indicators li {
+    border: 1px solid red;
+}
+
 .card img {
     width: 100%;
 }
@@ -131,8 +153,8 @@ input.header_search {
 
 button.more_info {
     color: #fff;
-    background-color: #337ab7;
-    border-color: #2e6da4;
+    background-color: #ff0000;
+    border-color: #ff0000;
     width: 100px;
     height: 40px;
     border-radius: 30px;
@@ -176,6 +198,8 @@ button.more_info:focus {
 }
 
 .ribbon {
+    width: 274px;
+    left: 4px;
     text-align: center;
     margin: 5px -25px 20px;
     height: 50px;
@@ -192,6 +216,332 @@ button.more_info:focus {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    background-color: #baaca3;
+    background-color: #cecece;
     align-self: stretch;
+}
+
+.right_price_border {
+    border-right: 1px solid;
+    height: 40px;
+    position: relative;
+    top: 6px;
+}
+
+.fa-building-o {
+    font-size: 30px;
+    position: relative;
+    left: -5px;
+    top: 5px;
+    color: #ff0000;
+}
+
+.fa-ticket {
+    font-size: 30px;
+    position: relative;
+    right: 11px;
+    top: 9px;
+    color: #ff0000;
+}
+
+.half1 {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.half2 {
+    position: relative;
+    left: -6px;
+    bottom: -3px;
+}
+
+
+/* css */
+
+
+/* Nav Menu Essentials */
+
+ul {
+    list-style: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    padding-top: 8px;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.nav-item a {
+    color: white;
+    font-size: 15px;
+}
+
+.megamenu_ul {
+    width: auto;
+}
+
+.megamenu_ul a {
+    color: black;
+}
+
+.dropdown-menu {
+    width: 394px;
+    padding: 15px;
+    /* display: block !important; */
+    position: absolute;
+    left: -88px;
+    z-index: 1000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+
+/* tab search area */
+
+.nav-tabs>li {
+    width: 150px;
+}
+
+.booking {
+    background: #20211fa6;
+    padding: 30px;
+    height: 45vh;
+    border-radius: 20px;
+}
+
+span.form-label {
+    color: white !important;
+}
+
+.search_form {
+    position: absolute;
+    top: 24%;
+    width: 85%;
+}
+
+.form-control {
+    border-radius: 10px !important;
+    height: 35px;
+}
+
+.form-group {
+    margin-bottom: 0 !important;
+    margin-top: 15px;
+}
+
+.nav-tabs>li>a:hover {
+    color: black;
+}
+
+.search_btn {
+    margin-top: 15px;
+    float: right;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+
+/* card2 */
+
+.row2 {
+    margin-top: 1cm;
+}
+
+.card2 {
+    padding: 13px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.25), 0 0px 0px rgba(0, 0, 0, 0.22);
+    height: 25vh;
+}
+
+.bordy_p {
+    font-size: 13px;
+}
+
+.card2 p {
+    font-size: 17px;
+    color: red;
+    text-align: center;
+}
+
+.notification_heading {
+    text-align: center;
+}
+
+.notify_btn {
+    height: 50px;
+    margin-left: -50px;
+    background: red;
+    color: white;
+    width: 150px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#exampleInputEmail1 {
+    width: 40%;
+    height: 50px;
+}
+
+.notification_form_group {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 1cm;
+    background: black;
+}
+
+.company_contact {
+    margin: 15px auto;
+}
+
+.company_contact li {
+    margin: 15px auto;
+}
+
+.company_contact li a {
+    text-decoration: none;
+    color: white;
+}
+
+.company_contact li i {
+    color: white;
+}
+
+.company_contact li a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+#footer_Email1 {
+    width: 70%;
+}
+
+.footer_notification {
+    display: flex;
+}
+
+.notify_btn2 {
+    margin-left: -50px;
+    background: red;
+    color: white;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.footer_header {
+    margin-left: 40px;
+    margin-bottom: 1cm;
+    color: red;
+}
+
+footer .container-fluid .row {
+    margin-top: 15px;
+}
+
+
+/*  footer social icon */
+
+ul.footer_social_icon {
+    display: flex;
+}
+
+ul.footer_social_icon li {
+    list-style: none;
+}
+
+ul.footer_social_icon li a {
+    width: 65px;
+    height: 65px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+
+ul.footer_social_icon li a .icon {
+    position: relative;
+    color: #262626;
+    top: -9px;
+    transition: .5s;
+    z-index: 3;
+    font-weight: 900;
+}
+
+ul.footer_social_icon li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+ul.footer_social_icon li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+}
+
+ul.footer_social_icon li a:hover:before {
+    top: 0;
+}
+
+ul.footer_social_icon li:nth-child(1) a:before {
+    background: #3b5999;
+}
+
+ul.footer_social_icon li:nth-child(2) a:before {
+    background: #55acee;
+}
+
+ul.footer_social_icon li:nth-child(3) a:before {
+    background: #0077b5;
+}
+
+ul.footer_social_icon li:nth-child(4) a:before {
+    background: #dd4b39;
+}
+
+ul.footer_social_icon li:nth-child(5) a:before {
+    background: #4bf912;
+}
+
+.footer_download_link img {
+    width: 100px;
+}
+
+.footer_payment_link img {
+    width: 65px;
+}
+
+.copyright-text p {
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+}
+
+.Holiday {
+    margin: 0 11px;
 }
