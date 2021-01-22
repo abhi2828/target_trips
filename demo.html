@@ -1,227 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
-
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
-    <!-- style css -->
-    <link rel="stylesheet" href="./asset/css/index.css">
-    <title>Target Trips</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .arrow {
+            width: 60px;
+            height: 82px;
+            position: absolute;
+            left: 49%;
+            margin-left: 0px;
+            bottom: 5%;
+            z-index: 999;
+        }
+        
+        .arrow path {
+            stroke: #e74c3c;
+            stroke-width: 2px;
+            fill: transparent;
+            animation: down 2s infinite;
+        }
+        /* arrow keyframe animation */
+        
+        @keyframes down {
+            0% {
+                opacity: 0
+            }
+            25% {
+                opacity: 1
+            }
+            75% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0
+            }
+        }
+        
+        .arrow path.a1 {
+            animation-delay: -1s;
+        }
+        
+        .arrow path.a2 {
+            animation-delay: -.5s;
+        }
+        
+        .arrow path.a3 {
+            animation-delay: 0s;
+        }
+    </style>
+    <title>Document</title>
 </head>
-<style>
-    body {
-        background: black;
-    }
-    
-    .booking {
-        background: #4848c5a6;
-        padding: 30px;
-    }
-</style>
 
 <body>
-
-
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 booking">
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item active">
-                            <a class="nav-link active" href="#Accommodation" role="tab" data-toggle="tab">Accommodation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Cruise" role="tab" data-toggle="tab">Cruise</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Rent" role="tab" data-toggle="tab">Rent a Car</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Tour" role="tab" data-toggle="tab">Tour</a>
-                        </li>
-                    </ul>
-
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane fade in active" id="Accommodation">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <span class="form-label">Check in date</span>
-                                        <input class="form-control form-control-date" type="date" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <span class="form-label">Check out date</span>
-                                        <input class="form-control form-control-date" type="date" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <span class="form-label">Where ?</span>
-                                        <select class="form-control">
-                                            <option value="">Select</option>
-                                            <option value="16">AHMEDABAD</option>
-                                            <option value="17">BENGALURU</option>
-                                            <option value="18">DELHI</option>
-                                            <option value="21">HYDERABAD</option>
-                                            <option value="14">MUMBAI</option>
-                                            <option value="15">PUNE</option>  
-                                        </select>
-                                        <span class="select-arrow"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="Cruise">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <span class="form-label">Departure date</span>
-                                        <input class="form-control form-control-date" type="date" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <span class="form-label">Departure port</span>
-                                        <select class="form-control">
-                                            <option value="">Select</option>
-                                            <option value="16">AHMEDABAD</option>
-                                            <option value="17">BENGALURU</option>
-                                            <option value="18">DELHI</option>
-                                            <option value="21">HYDERABAD</option>
-                                            <option value="14">MUMBAI</option>
-                                            <option value="15">PUNE</option>  
-                                        </select>
-                                        <span class="select-arrow"></span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <span class="form-label">Destination</span>
-                                        <select class="form-control">
-                                            <option value="">Select</option>
-                                            <option value="16">AHMEDABAD</option>
-                                            <option value="17">BENGALURU</option>
-                                            <option value="18">DELHI</option>
-                                            <option value="21">HYDERABAD</option>
-                                            <option value="14">MUMBAI</option>
-                                            <option value="15">PUNE</option>  
-                                        </select>
-                                        <span class="select-arrow"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="Rent">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <span class="form-label">Pick up date</span>
-                                        <input class="form-control form-control-date" type="date" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <span class="form-label">Pick up location</span>
-                                        <select class="form-control">
-                                            <option value="">Select</option>
-                                            <option value="16">AHMEDABAD</option>
-                                            <option value="17">BENGALURU</option>
-                                            <option value="18">DELHI</option>
-                                            <option value="21">HYDERABAD</option>
-                                            <option value="14">MUMBAI</option>
-                                            <option value="15">PUNE</option>  
-                                        </select>
-                                        <span class="select-arrow"></span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <span class="form-label">Drop off date</span>
-                                        <input class="form-control form-control-date" type="date" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <span class="form-label">Drop off location</span>
-                                        <select class="form-control">
-                                            <option value="">Select</option>
-                                            <option value="16">AHMEDABAD</option>
-                                            <option value="17">BENGALURU</option>
-                                            <option value="18">DELHI</option>
-                                            <option value="21">HYDERABAD</option>
-                                            <option value="14">MUMBAI</option>
-                                            <option value="15">PUNE</option>  
-                                        </select>
-                                        <span class="select-arrow"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="Tour">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <span class="form-label">Departure date</span>
-                                        <input class="form-control form-control-date" type="date" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <span class="form-label">Departure port</span>
-                                        <select class="form-control">
-                                            <option value="">Select</option>
-                                            <option value="16">AHMEDABAD</option>
-                                            <option value="17">BENGALURU</option>
-                                            <option value="18">DELHI</option>
-                                            <option value="21">HYDERABAD</option>
-                                            <option value="14">MUMBAI</option>
-                                            <option value="15">PUNE</option>  
-                                        </select>
-                                        <span class="select-arrow"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-        </div>
-    </div>
-
-
-
+    <svg class="arrow">
+        <path class="a1" d="M0 0 L30 22 L60 0"></path>
+        <path class="a2" d="M0 20 L30 42 L60 20"></path>
+        <path class="a3" d="M0 40 L30 62 L60 40"></path>
+    </svg>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script>
-    $(".dropdown-toggle").hover(function() {
-        $(this).addClass("show");
-        $(".megaOption").addClass("show");
-    });
-
-    $(".dropdown-menu").hover(function() {
-        $(".Holiday").addClass("show");
-        $(".megaOption").addClass("show");
-    }, function() {
-        $(".Holiday").removeClass("show");
-        $(".megaOption").removeClass("show");
-    });
-</script>
 
 </html>
