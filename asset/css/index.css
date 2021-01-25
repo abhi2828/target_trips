@@ -415,10 +415,6 @@ footer {
     background: black;
 }
 
-.company_contact {
-    margin: 15px auto;
-}
-
 .company_contact li {
     margin: 15px auto;
 }
@@ -536,7 +532,7 @@ ul.footer_social_icon li:nth-child(3) a:before {
 }
 
 ul.footer_social_icon li:nth-child(4) a:before {
-    background: #dd4b39;
+    background: #e86db1;
 }
 
 ul.footer_social_icon li:nth-child(5) a:before {
