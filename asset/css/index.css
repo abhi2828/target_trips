@@ -120,6 +120,7 @@ input.header_search {
 }
 
 .carousel-indicators {
+    display: none;
     position: relative;
     top: 475px;
 }
@@ -330,8 +331,7 @@ span.form-label {
 }
 
 .form-control {
-    border-radius: 10px !important;
-    height: 35px;
+    height: 40px;
 }
 
 .form-group {
@@ -609,4 +609,32 @@ ul.footer_social_icon li:nth-child(5) a:before {
 
 .arrow path.a3 {
     animation-delay: 0s;
+}
+
+.banner_search_btn {
+    margin-top: 15px;
+    float: right;
+}
+
+
+/* select box option */
+
+.bootstrap-select.btn-group .dropdown-menu li {
+    position: relative;
+    width: 92%;
+}
+
+.dropdown-menu {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 340px;
+    height: 300px;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    top: 30px;
 }
